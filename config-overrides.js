@@ -6,11 +6,15 @@ module.exports = function override(config, env) {
     config.plugins.push(
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, "build"),
-        routes: ["/"],
+        routes: ["/"], // your routes here
         minify: {
           collapseWhitespace: true,
           keepClosingSlash: true,
         },
+        renderer: new PrerenderSPAPlugin.PuppeteerRenderer({
+          renderAfterDocumentEvent: "prerender-ready", // wait for this event
+          headless: true,
+        }),
       })
     );
   }
