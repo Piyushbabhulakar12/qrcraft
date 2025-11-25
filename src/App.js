@@ -164,6 +164,12 @@ export default function App() {
       <Navbar />
 
       <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <link rel="preconnect" href="https://api.qrserver.com" />
+        <link rel="dns-prefetch" href="https://api.qrserver.com" />
         <title>QRCraft — Free Custom QR Code Generator</title>
         <meta
           name="description"
@@ -174,17 +180,23 @@ export default function App() {
           content="QR code generator, custom QR code, free QR code, QR codes online, QR code generator free"
         />
         <meta name="author" content="QRCraft" />
-        <link rel="canonical" href="https://www.example.com" />
+        <link rel="canonical" href="https://qrcraft-rho.vercel.app/" />
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "QRCraft",
-              "url": "https://www.example.com",
-              "description": "Generate custom QR codes quickly and free with QRCraft."
-            }
-          `}
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "QRCraft",
+  "url": "https://qrcraft-rho.vercel.app/",
+  "description": "Generate custom QR codes instantly for free. Supports links, apps, PDFs, WiFi, email, SMS, and more.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "creator": {
+    "@type": "Organization",
+    "name": "QRCraft"
+  }
+}
+`}
         </script>
       </Helmet>
 
@@ -194,16 +206,21 @@ export default function App() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-indigo-200/30 rounded-full blur-[100px] -z-10"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* ⭐ ADDED H1 TAG FOR SEO */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
             Create Custom{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
               QR Codes
-            </span>
-            <br className="hidden sm:block" /> in Seconds.
+            </span>{" "}
+            in Seconds – Free QR Code Generator
           </h1>
+
           <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
-            The simplest, most reliable QR code generator. Customize colors,
-            choose types, and download high-quality images for free.
+            QRCraft is a fast, reliable, and free QR code generator designed for
+            businesses, creators, and everyday users. Create high-quality QR
+            codes for links, PDFs, email, Wi-Fi, SMS, contacts, and more.
+            Customize colors, adjust styles, and download your QR codes
+            instantly with no signup required.
           </p>
         </div>
       </header>
@@ -552,6 +569,72 @@ export default function App() {
               icon={Share2}
             />
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white border-t border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
+            What Is QRCraft?
+          </h2>
+
+          <p className="text-slate-600 text-lg leading-relaxed mb-8">
+            QRCraft is a powerful and user-friendly QR code generator that lets
+            you create custom QR codes for any purpose. Whether you’re promoting
+            a business, sharing contact information, sending customers to a
+            website, or helping visitors connect to your Wi-Fi network, QRCraft
+            makes the process simple and instant. Unlike many generators,
+            QRCraft is completely free and offers unlimited usage without
+            requiring an account.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+            Who Is QRCraft For?
+          </h3>
+          <p className="text-slate-600 leading-relaxed mb-6">
+            QRCraft is built for businesses, marketers, restaurant owners, event
+            organizers, developers, teachers, freelancers, creators, and anyone
+            who needs a fast and convenient way to share information. From
+            product packaging and menus to flyers, posters, business cards, and
+            digital marketing, QR codes help you share more with less space.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+            Key Features
+          </h3>
+          <ul className="list-disc ml-6 text-slate-600 leading-relaxed mb-6">
+            <li>
+              Create QR codes for URLs, PDFs, email, Wi-Fi, SMS, phone numbers,
+              apps, and contact cards (vCard)
+            </li>
+            <li>Fully customizable color options to match your brand</li>
+            <li>High-quality, print-ready PNG downloads</li>
+            <li>Instant preview before downloading</li>
+            <li>No signup or account required</li>
+            <li>Fast, reliable, and mobile-friendly interface</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+            Why Use QRCraft?
+          </h3>
+          <p className="text-slate-600 leading-relaxed mb-6">
+            QR codes have become essential for businesses and creators. They
+            make it easier than ever to share digital content with physical
+            audiences. With QRCraft, you get full control over the look and
+            function of your QR codes—letting you create codes that feel modern,
+            branded, and visually clean. Whether you’re printing them on
+            marketing materials or sharing them online, QRCraft ensures your QR
+            codes always look sharp.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+            Get Started in Seconds
+          </h3>
+          <p className="text-slate-600 leading-relaxed">
+            Simply choose a QR type below, enter your information, customize the
+            colors if desired, and download your code instantly. It’s fast,
+            simple, and completely free—no hidden fees or restrictions.
+          </p>
         </div>
       </section>
 
