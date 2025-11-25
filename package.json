@@ -1,7 +1,6 @@
 {
   "name": "qrcraft",
   "version": "0.1.0",
-  "homepage": "https://piyushbabhulakar12.github.io/qrcraft/",
   "private": true,
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
