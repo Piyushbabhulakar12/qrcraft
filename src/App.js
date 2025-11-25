@@ -70,10 +70,6 @@ export default function App() {
   const [bgColor, setBgColor] = useState("#ffffff");
   const [downloading, setDownloading] = useState(false);
 
-  useEffect(() => {
-    window.dispatchEvent(new Event("prerender-ready"));
-  }, []);
-
   // Input States
   const [url, setUrl] = useState("");
   const [text, setText] = useState("");
