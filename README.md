@@ -1,6 +1,6 @@
 # QRCraft — Free Custom QR Code Generator
 
-![QRCraft Logo](public/logo192.png)
+
 
 QRCraft is a **fast, free, and easy-to-use QR code generator** built with React. Generate custom QR codes in seconds, customize colors, choose content types, and download high-quality images. Fully SEO-optimized with prerendered HTML for better Google ranking.
 
