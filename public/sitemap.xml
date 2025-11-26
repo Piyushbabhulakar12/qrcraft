@@ -3,13 +3,6 @@
   <url>
     <loc>https://qrcraft-rho.vercel.app/</loc>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://qrcraft-rho.vercel.app/about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://qrcraft-rho.vercel.app/contact</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-11-26</lastmod>
   </url>
 </urlset>
